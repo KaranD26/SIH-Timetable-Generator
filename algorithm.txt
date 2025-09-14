@@ -1,0 +1,106 @@
+1. High-Level Overview: The Problem and Approach
+
+The core task is to solve a Timetable Scheduling Problem, which is a classic example of a Constraint Satisfaction Problem (CSP).
+
+A CSP has three main components:
+* Variables: A set of decisions to be made (e.g., which class happens when?).
+* Domains: The possible values for each variable (e.g., a specific time slot).
+* Constraints: A set of rules that must be satisfied (e.g., two classes cannot be in the same room at the same time).
+
+Our goal is not just to find any solution that follows the rules (a feasible solution), but to find a good solution (an optimal or near-optimal solution). A "good" timetable is one that is compact, has fewer gaps for students, and uses resources efficiently.
+
+To achieve this, we use Constraint Programming (CP), a powerful technique for solving such combinatorial problems. The specific tool used is Google's CP-SAT Solver from their OR-Tools library. "SAT" stands for "satisfiability," and the solver is exceptionally good at figuring out if there's a way to set our variables that satisfies all our constraints.
+
+---
+
+2. Modeling the Problem: Translating Reality to Math
+
+The most critical part of the process is creating a mathematical model of the timetable problem that the CP-SAT solver can understand.
+
+A. Core Components (The Nouns)
+* Days: A list of working days (e.g., Mon, Tue, ..., Fri).
+* Slots: A list of time periods within each day (e.g., 9-10, 10-11).
+* Time (t): We flatten the days and slots into a single integer timeline. For example, with 5 days and 8 slots/day, we have time `t` from 0 to 39. Monday 9-10 is `t=0`, Monday 10-11 is `t=1`, ..., Tuesday 9-10 is `t=8`, and so on.
+* Batches (b): The groups of students (e.g., Batch 1, Batch 2).
+* Subjects (s): The courses to be taught (e.g., Math, Physics).
+* Rooms: The number of available classrooms.
+* Faculty: The number of available teachers for a specific subject.
+
+B. Decision Variables (The Verbs - What the Solver Decides)
+
+The solver needs variables that represent the decisions we need to make. These are essentially a massive collection of on/off switches.
+
+* `x[(b, s, t)]`: This is the primary decision variable. It's a Boolean variable (either 0 or 1).
+    * `x[(b, s, t)] = 1` means: "YES, Batch `b` is scheduled for Subject `s` at Time `t`."
+    * `x[(b, s, t)] = 0` means: "NO, that is not happening."
+    * The solver's main job is to determine the final 0/1 value for every possible combination of batch, subject, and time.
+
+* `y[(b, t)]`: This is a helper variable to simplify the model. It's also a Boolean.
+    * `y[(b, t)] = 1` means: "YES, Batch `b` is busy with *any* subject at Time `t`."
+    * `y[(b, t)] = 0` means: "NO, Batch `b` is free at Time `t`."
+    * This is linked to `x` by the rule: a batch is busy at time `t` if and only if it's taking exactly one subject at that time.
+
+C. Constraints (The Rules of the Game)
+
+These are the strict, unbreakable rules that any valid timetable must follow. The model adds these rules to the solver.
+
+Hard Constraints:
+1.  One Class at a Time per Batch: A batch cannot attend two different subjects simultaneously.
+    * Implementation: This is implicitly enforced by the definition of the `y[(b, t)]` helper variable. We state that `sum(x[(b, s, t)] for all subjects s)` must be equal to `y[(b, t)]`. Since `y` can only be 0 or 1, the sum can also only be 0 or 1, meaning a batch can have at most one subject at any time `t`.
+
+2.  Subject Hours Met: Each batch must be scheduled for the exact required number of hours per week for each subject.
+    * Implementation: For each batch `b` and subject `s`, we add the constraint: `sum(x[(b, s, t)] for all time t) == required_hours`.
+
+3.  Room Capacity: The number of classes happening at any single time `t` cannot exceed the number of available rooms.
+    * Implementation: For each time `t`, we add the constraint: `sum(y[(b, t)] for all batches b) <= num_rooms`.
+
+4.  Faculty Capacity: For any subject `s` at any time `t`, the number of batches taking that subject cannot exceed the number of available faculty for that subject.
+    * Implementation: For each time `t` and subject `s`, we add: `sum(x[(b, s, t)] for all batches b) <= faculty_count_for_s`.
+
+5.  Workload Limits: Each batch must adhere to daily and weekly maximum/minimum class hours.
+    * Implementation:
+        * Max per day: For each batch `b` and day `d`, `sum(y[(b, t)] for all slots t in that day) <= max_per_day`.
+        * Min per day (if not a free day): This is trickier. We use an "indicator variable" (`is_active`). If a day has any classes (`sum > 0`), then `is_active` is forced to be 1. We then add a rule: `sum(y[(b, t)]) >= min_per_day` that is `OnlyEnforceIf(is_active)`. This means the minimum limit doesn't apply on free days.
+        * Max per week: For each batch `b`, `sum(y[(b, t)] for all time t) <= max_per_week`.
+
+D. The Objective Function (Defining a "Good" Timetable)
+
+Instead of just finding any solution, we guide the solver towards a better one by giving it a score to maximize. This is done by defining an objective function, which is a weighted sum of desirable properties (soft constraints).
+
+* Goal: `Maximize(Score)`
+* Score Calculation: `Score = (Term1 * Weight1) + (Term2 * Weight2) - (Penalty1 * Weight3) - ...`
+
+Our Desirable Properties (Soft Constraints):
+1.  Maximize Adjacency: We want classes to be back-to-back to minimize gaps.
+    * Implementation: We create a variable `adj_var` for each pair of adjacent slots `(t, t+1)`. `adj_var` is 1 if a batch has classes in *both* slots. The total score is increased by `WEIGHT_ADJACENCY` for every occurrence of this.
+
+2.  Maximize Full Room Utilization: We prefer time slots where all rooms are being used. This leads to a more compact schedule, potentially freeing up entire afternoons.
+    * Implementation: We create a variable `full_slot[t]` that is 1 if the number of classes at time `t` equals `num_rooms`. The total score is increased by a very large `WEIGHT_FULL_SLOT` for each full slot.
+
+Our Undesirable Properties (Penalties):
+1.  Penalize Same Subject on Same Day: It's generally better to have a subject once a day.
+    * Implementation: We calculate how many times a subject appears for a batch on a given day. If it's more than 1, we add a penalty term to the objective function. The score is *decreased* by `WEIGHT_PENALTY_SAME_DAY_SUBJECT` for each repetition.
+
+2.  Strongly Penalize Free Days: We want to avoid schedules where a batch has, for example, classes on Mon, Tue, Thu, Fri, but Wednesday is completely empty. A compact 5-day week is preferred.
+    * Implementation: Using the `is_active` variable from the min-per-day constraint, we can tell if a day is free (`is_active` is 0). We add a huge penalty `WEIGHT_PENALTY_FREE_DAY` if a day is not active. This strongly pushes the solver to schedule at least one class (and thus, at least `min_per_day` classes) on each day.
+
+---
+
+3. The Solving Process
+
+1.  Instantiation: The `solve_timetable` function takes all user parameters and builds the model described above.
+2.  Invocation: The line `solver.Solve(model)` hands the entire model (variables, constraints, and objective) to the CP-SAT engine.
+3.  Search: The solver uses sophisticated algorithms and heuristics to navigate the massive search space of all possible 0/1 assignments for the `x` variables. It prunes entire branches of possibilities that would violate constraints and uses the objective function to guide its search towards high-scoring solutions.
+4.  Termination: The solver stops when it either finds a provably optimal solution, finds a good-enough feasible solution, or hits the time limit (`SOLVER_TIME_LIMIT`).
+5.  Result: If a solution is found, the solver's status is `OPTIMAL` or `FEASIBLE`. If no solution can satisfy the hard constraints, the status is `INFEASIBLE`.
+
+---
+
+4. Decoding the Solution
+
+The solver returns the final 0/1 values for all decision variables. This is not yet a human-readable timetable. The final step is to iterate through this result and build the schedule.
+
+* The code loops through every batch `b`, every subject `s`, and every time slot `t`.
+* Inside the loop, it asks the solver: `What is the value of x[(b, s, t)] in the solution?` (`solver.Value(...)`).
+* If the value is 1, it means that class is scheduled. The code then places the subject's name into a 2D array representing the timetable for that batch at that time slot.
+* A similar process is used to build the room assignment list by checking the `y[(b, t)]` variables.

@@ -41,8 +41,8 @@ This diagram outlines the user roles and navigation flow for the Automated Timet
       |       |   +----------------+                                | Configure Constraints   |
       |       |                                                     | (e.g., max hours/day)   |
       |       +-> +---------------+                                 +-------------------------+
-      |       |   | Manage Batches|                                       |
-      |       |   ---------------+                                       |
+      |       |   | Manage Batches|                                         |
+      |       |   ---------------+                                          |
       |       |                                                             v
       |       +-> +--------------+                                  +-----------------------+
       |           | Manage Rooms |                                  | Generate Master       |

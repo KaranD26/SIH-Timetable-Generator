@@ -6,14 +6,16 @@ This is a functional desktop prototype for the Smart India Hackathon, designed t
 The final goal is to develop a full-stack **web application** with a polished, interactive user interface.
 
 ## Core Features (Prototype)
-* GUI for setting parameters (batches, rooms, subjects).
-* Solves hard constraints like room/faculty limits and weekly hours.
-* Optimizes the schedule to reduce gaps and maximize resource usage.
-* Exports the final timetable to a CSV file.
+* GUI for managing all core data: **Batches, Subjects, Faculty, and Classrooms**.
+* **Dynamic Time Slot Configuration**, including setting start/end times and lunch breaks.
+* Solves hard constraints like **faculty availability, classroom capacity, subject-classroom type matching (Lab/Lecture), and weekly hour requirements**.
+* Optimizes schedules based on soft constraints to **minimize gaps, avoid long class stretches, and respect faculty preferences**.
+* Exports the final comprehensive timetable and individual faculty schedules to **CSV files**.
+* Includes a basic **Analytics Dashboard** to visualize faculty workload and classroom utilization.
 
 ## How to Run
 1.  **Install prerequisites:** `pip install ortools`
-2.  **Run the script:** `python TT_prototype.py`
+2.  **Run the script:** `python TimetableGenerator.py` or double-click `Execute.bat`
 
 ## Roadmap & Future Features
 The planned web application will include:

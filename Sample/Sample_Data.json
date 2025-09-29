@@ -1,0 +1,74 @@
+{
+    "batches": {
+        "A1": {
+            "year": 1,
+            "branch": "CSE",
+            "subjects": {
+                "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] },
+                "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] },
+                "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] },
+                "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] },
+                "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] },
+                "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] },
+                "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] },
+                "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }
+            }
+        },
+        "A2": {
+            "year": 1,
+            "branch": "CSE",
+            "subjects": {
+                "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] },
+                "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] },
+                "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] },
+                "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] },
+                "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] },
+                "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] },
+                "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] },
+                "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] },
+                "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }
+            }
+        },
+        "B1": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } },
+        "B2": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } },
+        "C1": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } },
+        "C2": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } },
+        "D1": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } },
+        "D2": { "year": 1, "branch": "CSE", "subjects": { "Mathematics (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Mathematics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "Physics (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["Physics Lab"] }, "Physics (Tut)": { "hours": 1, "type": "Lecture", "allowed_rooms": [] }, "Discrete Mathematics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "C Programming (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["C Programming Lab"] }, "AI/ML (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] }, "AI/ML (Lab)": { "hours": 2, "type": "Lab", "allowed_rooms": ["AI/ML Lab"] }, "Computer Organization (Lec)": { "hours": 3, "type": "Lecture", "allowed_rooms": [] }, "Ethics (Lec)": { "hours": 2, "type": "Lecture", "allowed_rooms": [] } } }
+    },
+    "faculty": {
+        "Prof. Euler": { "assignments": { "Mathematics (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Gauss": { "assignments": { "Mathematics (Tut)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Newton": { "assignments": { "Physics (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Curie": { "assignments": { "Physics (Lab)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Feynman": { "assignments": { "Physics (Tut)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Turing": { "assignments": { "Discrete Mathematics (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Ritchie": { "assignments": { "C Programming (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Kernighan": { "assignments": { "C Programming (Lab)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Hinton": { "assignments": { "AI/ML (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. LeCun": { "assignments": { "AI/ML (Lab)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Von Neumann": { "assignments": { "Computer Organization (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} },
+        "Prof. Aristotle": { "assignments": { "Ethics (Lec)": ["A1", "A2", "B1", "B2", "C1", "C2", "D1", "D2"] }, "preferences": {} }
+    },
+    "classrooms": {
+        "GS-1": { "capacity": 2, "type": "Lecture" },
+        "GS-2": { "capacity": 2, "type": "Lecture" },
+        "GS-3": { "capacity": 2, "type": "Lecture" },
+        "GS-4": { "capacity": 2, "type": "Lecture" },
+        "Physics Lab": { "capacity": 1, "type": "Lab" },
+        "C Programming Lab": { "capacity": 1, "type": "Lab" },
+        "AI/ML Lab": { "capacity": 1, "type": "Lab" },
+        "SEW-1": { "capacity": 1, "type": "Lecture" },
+        "SEW-2": { "capacity": 1, "type": "Lecture" },
+        "SEW-3": { "capacity": 1, "type": "Lecture" },
+        "SEW-4": { "capacity": 1, "type": "Lecture" }
+    }
+}
+

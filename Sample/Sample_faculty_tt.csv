@@ -1,0 +1,193 @@
+Faculty,Day,Slot,Subject,Batch,Classroom
+Prof. Aristotle,Mon,12-1,Ethics (Lec),D1,GS-4
+Prof. Aristotle,Mon,2-3,Ethics (Lec),B1,GS-3
+Prof. Aristotle,Mon,3-4,Ethics (Lec),D2,SEW-4
+Prof. Aristotle,Tue,10-11,Ethics (Lec),A2,SEW-3
+Prof. Aristotle,Tue,12-1,Ethics (Lec),D1,SEW-4
+Prof. Aristotle,Tue,2-3,Ethics (Lec),B2,GS-3
+Prof. Aristotle,Wed,9-10,Ethics (Lec),C2,SEW-4
+Prof. Aristotle,Wed,10-11,Ethics (Lec),C1,GS-2
+Prof. Aristotle,Wed,12-1,Ethics (Lec),B1,GS-1
+Prof. Aristotle,Thu,10-11,Ethics (Lec),D2,SEW-4
+Prof. Aristotle,Thu,12-1,Ethics (Lec),B2,GS-1
+Prof. Aristotle,Thu,2-3,Ethics (Lec),C1,SEW-1
+Prof. Aristotle,Thu,3-4,Ethics (Lec),A1,SEW-2
+Prof. Aristotle,Fri,9-10,Ethics (Lec),A2,GS-1
+Prof. Aristotle,Fri,11-12,Ethics (Lec),C2,SEW-1
+Prof. Aristotle,Fri,2-3,Ethics (Lec),A1,SEW-1
+Prof. Curie,Mon,10-11,Physics (Lab),D1,Physics Lab
+Prof. Curie,Mon,11-12,Physics (Lab),C1,C Programming Lab
+Prof. Curie,Mon,12-1,Physics (Lab),D2,Physics Lab
+Prof. Curie,Mon,3-4,Physics (Lab),C2,C Programming Lab
+Prof. Curie,Tue,11-12,Physics (Lab),C1,Physics Lab
+Prof. Curie,Tue,12-1,Physics (Lab),B1,Physics Lab
+Prof. Curie,Tue,2-3,Physics (Lab),D2,C Programming Lab
+Prof. Curie,Tue,3-4,Physics (Lab),C2,Physics Lab
+Prof. Curie,Wed,10-11,Physics (Lab),A2,Physics Lab
+Prof. Curie,Wed,12-1,Physics (Lab),A1,C Programming Lab
+Prof. Curie,Wed,2-3,Physics (Lab),B2,C Programming Lab
+Prof. Curie,Thu,11-12,Physics (Lab),A1,Physics Lab
+Prof. Curie,Thu,2-3,Physics (Lab),B2,C Programming Lab
+Prof. Curie,Fri,10-11,Physics (Lab),B1,Physics Lab
+Prof. Curie,Fri,11-12,Physics (Lab),A2,C Programming Lab
+Prof. Curie,Fri,12-1,Physics (Lab),D1,C Programming Lab
+Prof. Euler,Mon,9-10,Mathematics (Lec),D1,SEW-4
+Prof. Euler,Mon,10-11,Mathematics (Lec),B2,GS-4
+Prof. Euler,Mon,2-3,Mathematics (Lec),D1,SEW-1
+Prof. Euler,Mon,3-4,Mathematics (Lec),A1,SEW-3
+Prof. Euler,Tue,9-10,Mathematics (Lec),C1,SEW-2
+Prof. Euler,Tue,10-11,Mathematics (Lec),B1,GS-4
+Prof. Euler,Tue,11-12,Mathematics (Lec),C2,GS-1
+Prof. Euler,Tue,2-3,Mathematics (Lec),A2,SEW-1
+Prof. Euler,Tue,3-4,Mathematics (Lec),A2,SEW-1
+Prof. Euler,Wed,10-11,Mathematics (Lec),D1,SEW-4
+Prof. Euler,Wed,12-1,Mathematics (Lec),C1,SEW-3
+Prof. Euler,Wed,2-3,Mathematics (Lec),A1,SEW-4
+Prof. Euler,Wed,3-4,Mathematics (Lec),D2,SEW-1
+Prof. Euler,Thu,9-10,Mathematics (Lec),D2,SEW-3
+Prof. Euler,Thu,11-12,Mathematics (Lec),D2,GS-4
+Prof. Euler,Thu,12-1,Mathematics (Lec),A2,GS-3
+Prof. Euler,Thu,2-3,Mathematics (Lec),C2,GS-3
+Prof. Euler,Thu,3-4,Mathematics (Lec),B1,SEW-4
+Prof. Euler,Fri,9-10,Mathematics (Lec),B1,SEW-3
+Prof. Euler,Fri,10-11,Mathematics (Lec),B2,SEW-2
+Prof. Euler,Fri,11-12,Mathematics (Lec),B2,SEW-4
+Prof. Euler,Fri,12-1,Mathematics (Lec),C1,SEW-2
+Prof. Euler,Fri,2-3,Mathematics (Lec),C2,GS-3
+Prof. Euler,Fri,4-5,Mathematics (Lec),A1,SEW-4
+Prof. Feynman,Mon,10-11,Physics (Tut),A1,GS-4
+Prof. Feynman,Tue,11-12,Physics (Tut),A2,SEW-3
+Prof. Feynman,Tue,12-1,Physics (Tut),D2,GS-4
+Prof. Feynman,Wed,2-3,Physics (Tut),B1,GS-4
+Prof. Feynman,Thu,12-1,Physics (Tut),C2,GS-4
+Prof. Feynman,Thu,3-4,Physics (Tut),B2,SEW-3
+Prof. Feynman,Fri,11-12,Physics (Tut),C1,GS-1
+Prof. Feynman,Fri,2-3,Physics (Tut),D1,SEW-2
+Prof. Gauss,Mon,11-12,Mathematics (Tut),A2,SEW-3
+Prof. Gauss,Mon,12-1,Mathematics (Tut),A1,SEW-1
+Prof. Gauss,Tue,12-1,Mathematics (Tut),B2,GS-2
+Prof. Gauss,Tue,2-3,Mathematics (Tut),D1,GS-1
+Prof. Gauss,Wed,11-12,Mathematics (Tut),C1,GS-1
+Prof. Gauss,Wed,3-4,Mathematics (Tut),B1,SEW-3
+Prof. Gauss,Thu,12-1,Mathematics (Tut),D2,SEW-2
+Prof. Gauss,Thu,3-4,Mathematics (Tut),C2,GS-4
+Prof. Hinton,Mon,11-12,AI/ML (Lec),B2,SEW-4
+Prof. Hinton,Mon,12-1,AI/ML (Lec),A2,GS-3
+Prof. Hinton,Mon,2-3,AI/ML (Lec),C1,SEW-3
+Prof. Hinton,Tue,9-10,AI/ML (Lec),B2,SEW-1
+Prof. Hinton,Tue,12-1,AI/ML (Lec),C2,GS-3
+Prof. Hinton,Tue,2-3,AI/ML (Lec),C2,GS-4
+Prof. Hinton,Wed,9-10,AI/ML (Lec),D1,SEW-3
+Prof. Hinton,Wed,10-11,AI/ML (Lec),D2,GS-1
+Prof. Hinton,Wed,11-12,AI/ML (Lec),A1,SEW-4
+Prof. Hinton,Thu,11-12,AI/ML (Lec),D1,SEW-3
+Prof. Hinton,Thu,2-3,AI/ML (Lec),A1,SEW-4
+Prof. Hinton,Thu,3-4,AI/ML (Lec),C1,GS-4
+Prof. Hinton,Thu,4-5,AI/ML (Lec),B1,SEW-1
+Prof. Hinton,Fri,11-12,AI/ML (Lec),B1,GS-1
+Prof. Hinton,Fri,12-1,AI/ML (Lec),A2,GS-4
+Prof. Hinton,Fri,3-4,AI/ML (Lec),D2,SEW-4
+Prof. Kernighan,Mon,11-12,C Programming (Lab),B1,Physics Lab
+Prof. Kernighan,Mon,2-3,C Programming (Lab),B2,Physics Lab
+Prof. Kernighan,Mon,3-4,C Programming (Lab),B2,Physics Lab
+Prof. Kernighan,Tue,9-10,C Programming (Lab),B1,Physics Lab
+Prof. Kernighan,Tue,10-11,C Programming (Lab),C1,C Programming Lab
+Prof. Kernighan,Wed,10-11,C Programming (Lab),C2,C Programming Lab
+Prof. Kernighan,Wed,11-12,C Programming (Lab),A2,Physics Lab
+Prof. Kernighan,Wed,12-1,C Programming (Lab),C2,AI/ML Lab
+Prof. Kernighan,Thu,2-3,C Programming (Lab),D2,Physics Lab
+Prof. Kernighan,Thu,4-5,C Programming (Lab),A1,Physics Lab
+Prof. Kernighan,Fri,9-10,C Programming (Lab),C1,AI/ML Lab
+Prof. Kernighan,Fri,10-11,C Programming (Lab),A2,AI/ML Lab
+Prof. Kernighan,Fri,11-12,C Programming (Lab),D1,AI/ML Lab
+Prof. Kernighan,Fri,12-1,C Programming (Lab),A1,Physics Lab
+Prof. Kernighan,Fri,3-4,C Programming (Lab),D1,C Programming Lab
+Prof. Kernighan,Fri,4-5,C Programming (Lab),D2,Physics Lab
+Prof. LeCun,Mon,10-11,AI/ML (Lab),D2,AI/ML Lab
+Prof. LeCun,Mon,11-12,AI/ML (Lab),D2,AI/ML Lab
+Prof. LeCun,Mon,12-1,AI/ML (Lab),C2,C Programming Lab
+Prof. LeCun,Tue,9-10,AI/ML (Lab),D1,C Programming Lab
+Prof. LeCun,Tue,10-11,AI/ML (Lab),B2,Physics Lab
+Prof. LeCun,Tue,11-12,AI/ML (Lab),B2,AI/ML Lab
+Prof. LeCun,Wed,11-12,AI/ML (Lab),C2,C Programming Lab
+Prof. LeCun,Wed,12-1,AI/ML (Lab),D1,Physics Lab
+Prof. LeCun,Wed,3-4,AI/ML (Lab),A2,Physics Lab
+Prof. LeCun,Thu,10-11,AI/ML (Lab),C1,Physics Lab
+Prof. LeCun,Thu,2-3,AI/ML (Lab),A2,AI/ML Lab
+Prof. LeCun,Fri,10-11,AI/ML (Lab),C1,C Programming Lab
+Prof. LeCun,Fri,11-12,AI/ML (Lab),A1,Physics Lab
+Prof. LeCun,Fri,12-1,AI/ML (Lab),B1,AI/ML Lab
+Prof. LeCun,Fri,2-3,AI/ML (Lab),B1,Physics Lab
+Prof. LeCun,Fri,3-4,AI/ML (Lab),A1,Physics Lab
+Prof. Newton,Mon,11-12,Physics (Lec),A1,GS-3
+Prof. Newton,Mon,12-1,Physics (Lec),B1,GS-4
+Prof. Newton,Mon,2-3,Physics (Lec),C2,GS-4
+Prof. Newton,Mon,4-5,Physics (Lec),C1,SEW-3
+Prof. Newton,Tue,9-10,Physics (Lec),D2,GS-1
+Prof. Newton,Tue,10-11,Physics (Lec),D2,SEW-2
+Prof. Newton,Tue,11-12,Physics (Lec),A1,SEW-4
+Prof. Newton,Tue,12-1,Physics (Lec),A2,SEW-1
+Prof. Newton,Tue,2-3,Physics (Lec),C1,SEW-3
+Prof. Newton,Wed,11-12,Physics (Lec),B2,GS-4
+Prof. Newton,Wed,12-1,Physics (Lec),A2,SEW-4
+Prof. Newton,Wed,2-3,Physics (Lec),D1,GS-3
+Prof. Newton,Thu,11-12,Physics (Lec),C2,SEW-1
+Prof. Newton,Thu,12-1,Physics (Lec),B1,GS-3
+Prof. Newton,Thu,2-3,Physics (Lec),D1,SEW-2
+Prof. Newton,Fri,12-1,Physics (Lec),B2,GS-4
+Prof. Ritchie,Mon,10-11,C Programming (Lec),A2,SEW-4
+Prof. Ritchie,Mon,2-3,C Programming (Lec),D2,GS-3
+Prof. Ritchie,Tue,9-10,C Programming (Lec),A1,SEW-4
+Prof. Ritchie,Tue,10-11,C Programming (Lec),D1,SEW-1
+Prof. Ritchie,Tue,11-12,C Programming (Lec),D2,GS-1
+Prof. Ritchie,Tue,12-1,C Programming (Lec),C1,GS-1
+Prof. Ritchie,Tue,2-3,C Programming (Lec),B1,SEW-2
+Prof. Ritchie,Wed,11-12,C Programming (Lec),D1,SEW-1
+Prof. Ritchie,Wed,2-3,C Programming (Lec),C1,SEW-1
+Prof. Ritchie,Wed,4-5,C Programming (Lec),B1,SEW-4
+Prof. Ritchie,Thu,10-11,C Programming (Lec),C2,SEW-2
+Prof. Ritchie,Thu,11-12,C Programming (Lec),A2,GS-2
+Prof. Ritchie,Thu,12-1,C Programming (Lec),A1,SEW-4
+Prof. Ritchie,Thu,4-5,C Programming (Lec),B2,SEW-4
+Prof. Ritchie,Fri,10-11,C Programming (Lec),C2,SEW-3
+Prof. Ritchie,Fri,2-3,C Programming (Lec),B2,SEW-4
+Prof. Turing,Mon,9-10,Discrete Mathematics (Lec),B1,SEW-3
+Prof. Turing,Mon,11-12,Discrete Mathematics (Lec),C2,SEW-1
+Prof. Turing,Mon,12-1,Discrete Mathematics (Lec),C1,GS-1
+Prof. Turing,Mon,2-3,Discrete Mathematics (Lec),A2,SEW-2
+Prof. Turing,Mon,3-4,Discrete Mathematics (Lec),C1,GS-4
+Prof. Turing,Mon,4-5,Discrete Mathematics (Lec),C2,SEW-4
+Prof. Turing,Tue,11-12,Discrete Mathematics (Lec),D1,GS-3
+Prof. Turing,Tue,12-1,Discrete Mathematics (Lec),A1,SEW-3
+Prof. Turing,Tue,2-3,Discrete Mathematics (Lec),A1,SEW-4
+Prof. Turing,Wed,12-1,Discrete Mathematics (Lec),D2,GS-3
+Prof. Turing,Wed,2-3,Discrete Mathematics (Lec),A2,SEW-3
+Prof. Turing,Wed,4-5,Discrete Mathematics (Lec),B2,SEW-3
+Prof. Turing,Thu,11-12,Discrete Mathematics (Lec),B1,SEW-2
+Prof. Turing,Thu,12-1,Discrete Mathematics (Lec),D1,GS-1
+Prof. Turing,Fri,9-10,Discrete Mathematics (Lec),B2,GS-2
+Prof. Turing,Fri,12-1,Discrete Mathematics (Lec),D2,SEW-4
+Prof. Von Neumann,Mon,10-11,Computer Organization (Lec),B1,SEW-2
+Prof. Von Neumann,Mon,11-12,Computer Organization (Lec),D1,SEW-2
+Prof. Von Neumann,Mon,12-1,Computer Organization (Lec),B2,GS-2
+Prof. Von Neumann,Mon,2-3,Computer Organization (Lec),A1,SEW-4
+Prof. Von Neumann,Mon,3-4,Computer Organization (Lec),A2,SEW-2
+Prof. Von Neumann,Tue,10-11,Computer Organization (Lec),A1,SEW-4
+Prof. Von Neumann,Tue,11-12,Computer Organization (Lec),B1,GS-4
+Prof. Von Neumann,Tue,4-5,Computer Organization (Lec),C2,SEW-4
+Prof. Von Neumann,Wed,9-10,Computer Organization (Lec),C1,GS-2
+Prof. Von Neumann,Wed,10-11,Computer Organization (Lec),A1,SEW-2
+Prof. Von Neumann,Wed,11-12,Computer Organization (Lec),D2,SEW-2
+Prof. Von Neumann,Wed,12-1,Computer Organization (Lec),B2,SEW-1
+Prof. Von Neumann,Wed,2-3,Computer Organization (Lec),D2,SEW-2
+Prof. Von Neumann,Wed,3-4,Computer Organization (Lec),B2,SEW-2
+Prof. Von Neumann,Thu,9-10,Computer Organization (Lec),A2,SEW-4
+Prof. Von Neumann,Thu,10-11,Computer Organization (Lec),A2,SEW-3
+Prof. Von Neumann,Thu,11-12,Computer Organization (Lec),C1,SEW-4
+Prof. Von Neumann,Thu,12-1,Computer Organization (Lec),C1,SEW-3
+Prof. Von Neumann,Thu,2-3,Computer Organization (Lec),B1,GS-2
+Prof. Von Neumann,Thu,3-4,Computer Organization (Lec),D1,SEW-1
+Prof. Von Neumann,Fri,9-10,Computer Organization (Lec),C2,SEW-4
+Prof. Von Neumann,Fri,10-11,Computer Organization (Lec),D1,SEW-4
+Prof. Von Neumann,Fri,12-1,Computer Organization (Lec),C2,SEW-3
+Prof. Von Neumann,Fri,2-3,Computer Organization (Lec),D2,SEW-3
